@@ -64,12 +64,13 @@ jobs:
             path: build
         - name: Deploy to prod environment
           run: npm run deploy:simulate -- production
+
   deploy-prod-firebase:
       name: Deploy to prod on Firebase
       needs: build
       runs-on: ubuntu-latest
       steps:
-      - name: Checkout code
+        - name: Checkout code
           uses: actions/checkout@v2
         - name: Deploy with Node.js ${{ env.NODE_VERSION }}
           uses: actions/setup-node@v1
