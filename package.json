@@ -15,7 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "deploy:simulate": "C:/CodeOp/CodeWomen/github-actions-workshop/scripts/simulate-deployment.sh"
+    "deploy:simulate": "scripts/simulate-deployment.sh"
   },
   "engines" : { 
     "npm" : "9.8.1",
